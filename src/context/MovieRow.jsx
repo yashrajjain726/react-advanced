@@ -3,8 +3,8 @@ import UserContext from './userContext';
 import CartContext from './cartContext';
 function MovieRow(props){
     const userContext =useContext(UserContext)
-    const CartContext =useContext(CartContext)
-    console.log("Cart context",CartContext)
+    const cartContext =useContext(CartContext)
+    console.log("Cart context",cartContext)
     return(
         <div>
            MovieRow {userContext.currentUser?userContext.currentUser.name:""}
